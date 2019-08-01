@@ -29,6 +29,9 @@ $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/beast/config/common.mk)
 
+# Dirac
+$(call inherit-product-if-exists, vendor/xiaomi/Dirac/dirac.mk)
+
 BEAST_BUILD_TYPE := OFFICIAL
 
 # Device identifier

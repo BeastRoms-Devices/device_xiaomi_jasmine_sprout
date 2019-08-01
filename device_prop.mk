@@ -101,7 +101,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DPI
 PRODUCT_PROPERTY_OVERRIDES += \
-	vendor.display.lcd_density=480
+	vendor.display.lcd_density=440
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
