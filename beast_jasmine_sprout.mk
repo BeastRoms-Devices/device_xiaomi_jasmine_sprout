@@ -25,19 +25,17 @@ BUILD_TWRP := true
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit from aosp custom product configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# PE stuff
-TARGET_GAPPS_ARCH := arm64
+# Inherit some common BeastROMs stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-CUSTOM_BUILD_TYPE := OFFICIAL
+$(call inherit-product, vendor/beast/config/common.mk)
+
+BEAST_BUILD_TYPE := OFFICIAL
 
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := aosp_jasmine_sprout
+PRODUCT_NAME := beast_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 

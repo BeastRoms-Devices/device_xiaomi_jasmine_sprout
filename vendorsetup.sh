@@ -21,6 +21,5 @@
 # definition file).
 #
 
- add_lunch_combo aosp_jasmine_sprout-eng
- add_lunch_combo aosp_jasmine_sprout-userdebug
- add_lunch_combo aosp_jasmine_sprout-user
+add_lunch_combo beast_jasmine_sprout-userdebug
+export SKIP_ABI_CHECKS=true

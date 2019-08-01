@@ -65,8 +65,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.camera.display.umax=1920x1080 \
 	persist.vendor.camera.display.lmax=1280x720 \
 	vidc.enc.dcvs.extra-buff-count=2 \
-	persist.vendor.camera.eis.enable=0 \
-	persist.camera.eis.enable=0 \
+	persist.vendor.camera.eis.enable=1 \
+	persist.camera.eis.enable=1 \
 	persist.vendor.camera.expose.aux=1 \
 	persist.vendor.camera.preview.ubwc=0 \
 	persist.vendor.camera.stats.test=0 \
@@ -92,7 +92,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.imx376_ofilm.low.lux=290 \
 	persist.vendor.imx376_ofilm.light.lux=275 \
 	persist.vendor.bokeh.switch.lux=290 \
-	persist.vendor.camera.exif.make=Xiaomi
+	persist.vendor.camera.exif.make=Xiaomi \
+    persist.vendor.camera.HAL3.enabled=1
 
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \
